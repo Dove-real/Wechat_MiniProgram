@@ -1,0 +1,57 @@
+<view class="index">
+    <view class="body">
+        <view class="section section_gap">
+            <view class="section__ctn">
+                <image src="resources/0.jpg"/>
+            </view>
+        </view>
+        <view class="widgets__item">
+                <view id="content" class="widgets__info {{contentShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <text class="widgets__info-name">查找附近的回收箱</text>
+                    <image class="widgets__info-img" src="resources/kind/content.png" background-size="cover" />
+                </view>
+                <view class="widgets__list {{contentShow ? 'widgets__list_show' : ''}}">
+
+                    <navigator url="component-pages/wx-image/wx-image" class="widget">
+                        <text class="widget__name">使用定位服务确定您的位置</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+
+                    <navigator  class="widget">
+                        <text class="widget__name">中原区</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+
+                    <navigator  class="widget">
+                        <text class="widget__name">金水区</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+
+                    <navigator  class="widget">
+                        <text class="widget__name">高新区</text>
+                        <image class="widget__arrow" src="resources/arrow.png" background-size="cover" />
+                        <view class="widget__line"></view>
+                    </navigator>
+                    
+                </view>
+            </view>
+        <view class="wid1gets">
+            <view class="widgets__item">
+                <view id="view" class="widgets__info {{viewShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <text class="widgets__info-name" href="http://mqtt.raincorn.top:18083/">内容分区</text>
+                    <image class="widgets__info-img" src="resources/kind/view.png" background-size="cover" />
+                </view>
+            </view>
+            
+            <view class="widgets__item">
+                <view id="form" class="widgets__info {{formShow ? 'widgets__info_show' : ''}}" bindtap="widgetsToggle">
+                    <text class="widgets__info-name">了解更多</text>
+                    <image class="widgets__info-img" src="resources/kind/form.png" background-size="cover" />
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
